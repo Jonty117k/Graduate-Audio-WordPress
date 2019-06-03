@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="menu-activea">
+     <span>
+     <h1>
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </h1>
+    </span>
+  <ul>
+    <li>Home</li>
+    <li>Info</li>
+    <li>Order</li>
+    <li>Repair</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+<main>
+  <img class="top" src="img/top-image.png">
+  <img class="middle" src="img/middle-image.png">
+  <img class="bottom" src="img/bottom-image.png">
+  <img class="footer" src="img/footer-image.png">
+</main>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+<script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    $('h1, .bar1, .bar2, .bar3').on('mouseover', function() {
+      $('.bar1, .bar2, .bar3').css('background-color', '#424242');
+    });
+    $('h1, .bar1, .bar2, .bar3').on('mouseout', function() {
+      $('.bar1, .bar2, .bar3').css('background-color', 'white');
+    });    
+</script>
+<style type="text/css">
+  .top {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+  }
+  .middle {
+    position: fixed;
+    top: 478px;
+    width: 100%; 
+  }
+  .bottom {
+    position: absolute;
+    top: 770px;
+    width: 100%;
+  }  
+  .footer {
+  }  
+</style>
+
+</body>
+
+</html>
